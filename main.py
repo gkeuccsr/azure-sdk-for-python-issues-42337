@@ -1,12 +1,11 @@
-# See https://github.com/Azure/azure-sdk-for-python/issues/42337
 
-from azure.monitor.opentelemetry import configure_azure_monitor
+from azure.monitor.opentelemetry._configure import _setup_instrumentations, _get_configurations
 
 import logging
-# logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG)
 
-# Configure OpenTelemetry to use Azure Monitor with the
-# APPLICATIONINSIGHTS_CONNECTION_STRING environment variable.
-configure_azure_monitor(
-    logger_name=__name__
+configurations = _get_configurations(logger_name=__name__)
+
+_setup_instrumentations(
+    configurations
 )

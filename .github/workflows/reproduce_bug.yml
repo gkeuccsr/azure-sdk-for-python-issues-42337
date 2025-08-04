@@ -1,0 +1,26 @@
+name: Reproduce https://github.com/Azure/azure-sdk-for-python/issues/42337 bug
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  test:
+    name: ${{ matrix.os }}
+    strategy: 
+      fail-fast: false
+      matrix:
+        os: [
+          "macos-latest",
+          "ubuntu-24.04",
+        ]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Install uv
+      uses: astral-sh/setup-uv@v4
+    
+    - name: Run example app and asyncio pstree
+      shell: bash
+      run: |
+        uv lock --upgrade
+        uv run main.py 2>&1 | tee output && grep "ModuleNotFoundError: No module named 'psycopg2'" <output && (echo "FAIL" ; exit 11)

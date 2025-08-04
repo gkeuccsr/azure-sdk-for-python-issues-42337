@@ -79,7 +79,7 @@ wheels = [
 
 [[package]]
 name = "azure-monitor-opentelemetry-exporter"
-version = "1.0.0b40"
+version = "1.0.0b41"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "azure-core" },
@@ -90,9 +90,9 @@ dependencies = [
     { name = "opentelemetry-sdk" },
     { name = "psutil" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/5b/82/b7e438cb3e8eb179a7f8933431c76790a29d926522944dcef97f62312a7a/azure_monitor_opentelemetry_exporter-1.0.0b40.tar.gz", hash = "sha256:4727aff433df0fe991cb98a8a7d51358d67bc59908ddd9c024b2e916c854053b", size = 201312, upload-time = "2025-07-17T21:51:37.078Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6c/c3/2f18eaed17a40982ad04953ad0fa5b1a2dbc5a5c98b6d3ef68c1d7d285ae/azure_monitor_opentelemetry_exporter-1.0.0b41.tar.gz", hash = "sha256:b363e6f89c0dee16d02782a310a60d626e4c081ef49d533ff5225a40cbab12cc", size = 206710, upload-time = "2025-07-31T22:37:28.378Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/32/74/2eaa35844ecad4f053a4ef00a586b08307c63613244a51e9ce756b2e0cbe/azure_monitor_opentelemetry_exporter-1.0.0b40-py2.py3-none-any.whl", hash = "sha256:304fcda99499fb679e701d0bd034e3a8787b146548fd05154056fd0453796303", size = 159995, upload-time = "2025-07-17T21:51:38.568Z" },
+    { url = "https://files.pythonhosted.org/packages/50/d4/8cc989c4eedcefb74dccdd5af2faf51e0237163f538d2b258eef7e35f33d/azure_monitor_opentelemetry_exporter-1.0.0b41-py2.py3-none-any.whl", hash = "sha256:cbba629cca53e0e33416c61e08ebaabe833e740cfbfd7f2e9151821f92c66a51", size = 162631, upload-time = "2025-07-31T22:37:29.809Z" },
 ]
 
 [[package]]
@@ -106,7 +106,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "azure-monitor-opentelemetry", specifier = "==1.6.13" },
+    { name = "azure-monitor-opentelemetry", specifier = ">=1.6.13" },
     { name = "pip-system-certs", specifier = ">=5.2" },
 ]
 
@@ -242,14 +242,14 @@ wheels = [
 
 [[package]]
 name = "importlib-metadata"
-version = "8.6.1"
+version = "8.7.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "zipp" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/33/08/c1395a292bb23fd03bdf572a1357c5a733d3eecbab877641ceacab23db6e/importlib_metadata-8.6.1.tar.gz", hash = "sha256:310b41d755445d74569f993ccfc22838295d9fe005425094fad953d7f15c8580", size = 55767, upload-time = "2025-01-20T22:21:30.429Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/76/66/650a33bd90f786193e4de4b3ad86ea60b53c89b669a5c7be931fac31cdb0/importlib_metadata-8.7.0.tar.gz", hash = "sha256:d13b81ad223b890aa16c5471f2ac3056cf76c5f10f82d6f9292f0b415f389000", size = 56641, upload-time = "2025-04-27T15:29:01.736Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/79/9d/0fb148dc4d6fa4a7dd1d8378168d9b4cd8d4560a6fbf6f0121c5fc34eb68/importlib_metadata-8.6.1-py3-none-any.whl", hash = "sha256:02a89390c1e15fdfdc0d7c6b25cb3e62650d0494005c97d6f148bf5b9787525e", size = 26971, upload-time = "2025-01-20T22:21:29.177Z" },
+    { url = "https://files.pythonhosted.org/packages/20/b0/36bd937216ec521246249be3bf9855081de4c5e06a0c9b4219dbeda50373/importlib_metadata-8.7.0-py3-none-any.whl", hash = "sha256:e5dd1551894c77868a30651cef00984d50e1002d06942a7101d34870c5f02afd", size = 27656, upload-time = "2025-04-27T15:29:00.214Z" },
 ]
 
 [[package]]
