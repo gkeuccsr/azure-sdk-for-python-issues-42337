@@ -1,5 +1,7 @@
 name: Reproduce https://github.com/Azure/azure-sdk-for-python/issues/42337 bug
 on:
+  schedule:
+    - cron: "0 14 * * 1" # 14:00 UTC on Mondays
   push:
   workflow_dispatch:
 jobs:
