@@ -1,8 +1,7 @@
 name: Reproduce https://github.com/Azure/azure-sdk-for-python/issues/42337 bug
 on:
   schedule:
-    - cron: "35 13 * * 1" # 14:00 UTC on Mondays
-  push:
+    - cron: "05 14 * * 1" # 14:00 UTC on Mondays
   workflow_dispatch:
 jobs:
   test:
